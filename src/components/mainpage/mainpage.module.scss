@@ -1,0 +1,89 @@
+.root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6rem 0rem 3rem;
+    text-align: center;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 1.25em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.logo.ts:hover {
+    filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.logo.scss:hover {
+    filter: drop-shadow(0 0 2em #cc6698aa);
+}
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+.card {
+    padding: 2em;
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin: auto;
+}
+
+
+.subtitle {
+    font-size: 1.5rem;
+    margin: 0rem;
+    padding: 0rem 0rem 1rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.button {
+    background-image: linear-gradient(127deg, #2267e8 0%, #0aa1d6 25%, #93EDFF 94%);
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border: 2px solid transparent;
+    font-size: 0.8em;
+    padding-top: 1em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+}

@@ -5,56 +5,15 @@ import { ReactComponent as ViteLogo } from './assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from './assets/typescript.svg';
 import { ReactComponent as ScssLogo } from './assets/scss.svg';
 import styles from './App.module.scss';
+import { Mainpage } from './components/mainpage/mainpage';
 
 function App() {
-    const [count, setCount] = useState(0);
+    // const [count, setCount] = useState(0);
 
     return (
         <div className={styles.App}>
-            <div className={styles['box-title']}>
-                <h2 className={styles.title}>Patit Maiprasert</h2>
-                <h3>Software Engineer, Designer, Programmer</h3>
-            </div>
-            <button>👉🏻 My CV Here 👈🏻</button>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <ViteLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo)}
-                        title="Vite logo"
-                    />
-                </a>
-                <a href="https://reactjs.org" target="_blank">
-                    <ReactLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.react)}
-                        title="React logo"
-                    />
-                </a>
-                <a href="https://www.typescriptlang.org/" target="_blank">
-                    <TypescriptLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.ts)}
-                        title="Typescript logo"
-                    />
-                </a>
-                <a href="https://sass-lang.com/" target="_blank">
-                    <ScssLogo
-                        height="6em"
-                        width="6em"
-                        className={classNames(styles.logo, styles.scss)}
-                        title="SCSS logo"
-                    />
-                </a>
-            </div>
-            <div className={styles.card}>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button></div>
-            <p className={styles['read-the-docs']}>
-                Click on the Vite and React logos to learn more
-            </p>
+            <Mainpage />
+            
         </div>
     );
 }
