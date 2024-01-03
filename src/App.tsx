@@ -11,6 +11,11 @@ function App() {
 
     return (
         <div className={styles.App}>
+            <div className={styles['box-title']}>
+                <h2 className={styles.title}>Patit Maiprasert</h2>
+                <h3>Software Engineer, Designer, Programmer</h3>
+            </div>
+            <button>👉🏻 My CV Here 👈🏻</button>
             <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
@@ -46,11 +51,7 @@ function App() {
                 </a>
             </div>
             <div className={styles.card}>
-                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
-                <p>
-                    Edit <code>src/App.tsx</code> and save to test HMR
-                </p>
-            </div>
+                <button onClick={() => setCount((count) => count + 1)}>count is {count}</button></div>
             <p className={styles['read-the-docs']}>
                 Click on the Vite and React logos to learn more
             </p>
