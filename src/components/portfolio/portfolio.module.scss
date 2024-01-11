@@ -1,2 +1,55 @@
 .root {
+  max-width: 1280px;
+  margin: 0 2em;
+  padding: 0rem 0rem 3rem;
+  text-align: center;
+  position: static;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  --main-wh: #f0f0f0;
+  --main-c1: #47a5fb;
+  --main-c2: #49a5ef;
+  --main-c3: #048aff;
+  --main-c4: #0068ff;
+  --main-c5: #3652dd;
+  --main-bl: #000000;
+}
+
+.h3 {
+}
+
+.grid-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  grid-auto-flow: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.gird-content {
+}
+
+.visit-site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.grid-img {
+  border-radius: 10px;
+  min-width: auto;
+  height: auto;
+  width: 100%;
+}
+
+.description {
+  font-size: 0.8em;
+  margin: auto;
+  padding: 0em 7em 1em;
 }
