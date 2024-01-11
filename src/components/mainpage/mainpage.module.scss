@@ -87,3 +87,38 @@
     padding-bottom: 1em;
     padding-left: 2em;
 }
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes backspace {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+  
+    & span {
+      display: inline-block;
+      opacity: 0;
+    }
+  
+    &.visible span {
+      opacity: 1;
+      animation: typing 1s steps(40) forwards, backspace 0.5s steps(40) reverse forwards;
+    }
+  }
+  

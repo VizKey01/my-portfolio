@@ -1,5 +1,8 @@
 import classNames from 'classnames';
 import styles from './animation.module.scss';
+import Lottie from 'lottie-react'
+import man from '../../assets/Man-animation.json'
+import {motion} from 'framer-motion'
 
 export interface AnimationProps {
     className?: string;

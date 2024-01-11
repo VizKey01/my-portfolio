@@ -1,43 +1,75 @@
 "use client";
+import React, { useState, useEffect } from 'react';
+// import { TypeAnimation } from 'react-type-animation';
 import classNames from 'classnames';
 import styles from './mainpage.module.scss';
 import { ReactComponent as ReactLogo } from '../../assets/react.svg';
 import { ReactComponent as ViteLogo } from '../../assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from '../../assets/typescript.svg';
 import { ReactComponent as ScssLogo } from '../../assets/scss.svg';
-import { TypeAnimation} from 'react-type-animation';
+
 export interface MainpageProps {
     className?: string;
 }
 
-/**
- * This component was created using Codux's Default new component template.
- * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
- */
+const TypewriterAnimation = ({ words, speed }) => {
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentText, setCurrentText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (!isDeleting && currentText === words[currentWordIndex]) {
+        // If the word is complete, wait for 2 seconds before starting deletion
+        setTimeout(() => {
+          setIsDeleting(true);
+        }, 1000);
+      }
+
+      if (isDeleting) {
+        setCurrentText((prevText) => prevText.slice(0, -1));
+      } else {
+        setCurrentText(words[currentWordIndex].slice(0, currentText.length + 1));
+      }
+
+      if (isDeleting && currentText === '') {
+        setIsDeleting(false);
+        setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+      }
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [currentText, currentWordIndex, isDeleting, words, speed]);
+
+  return (
+    <span className={styles.typewriter}>
+      {currentText}
+      <span className={styles.cursor}>/</span>
+    </span>
+  );
+};
+
 export const Mainpage = ({ className }: MainpageProps) => {
-    return <div className={classNames(styles.root, className)}>Mainpage
+  const words = [
+    'Hello Everyone',
+    'My name is Micky',
+    'I am Web Developer',
+    'I am Programmer',
+    'I am Computer Engineer',
+    'I am Ux/Ui Designer',
+    'I am Innovator',
+  ];
+  const speed = 75; // Adjust the speed
+
+    return <div className={classNames(styles.root, className)}>
         <div className={styles['box-title']}>
             <h2 className={styles.title}>Patit Maiprasert</h2>
-            <h3 className={styles.subtitle}>Software Engineer, Designer, Programmer</h3>
+            <h4 className={classNames(styles.subtitle)}>
+          <TypewriterAnimation words={words} speed={speed} />
+          </h4>
             <span>text</span>
-            
         </div>
-        <TypeAnimation
-                sequence={[
-                    'We produce food for Mice',
-                    1000,
-                    'We produce food for Hamsters',
-                    1000,
-                    'We produce food for Guinea Pigs',
-                    1000,
-                    'We produce food for Chinchillas',
-                    1000
-                ]}
-                wrapper="span"
-                speed={50}
-                style={{ fontSize: '2em', display: 'inline-block' }}
-                repeat={Infinity}
-            />
+        
         <button className={styles.button}>👉🏻 My CV Here 👈🏻</button>
         <p>This is a paragraph.</p>
         <div>
