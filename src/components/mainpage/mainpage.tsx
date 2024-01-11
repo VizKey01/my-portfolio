@@ -12,10 +12,21 @@ export interface MainpageProps {
     className?: string;
 }
 
-const TypewriterAnimation = ({ words, speed }) => {
+const TypewriterAnimation = ({}) => {
+  
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+  const words = [
+    'Hello Everyone',
+    'My name is Micky',
+    'I am Web Developer',
+    'I am Programmer',
+    'I am Computer Engineer',
+    'I am Ux/Ui Designer',
+    'I am Innovator',
+  ];
+  const speed = 75; // Adjust the speed
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -50,22 +61,12 @@ const TypewriterAnimation = ({ words, speed }) => {
 };
 
 export const Mainpage = ({ className }: MainpageProps) => {
-  const words = [
-    'Hello Everyone',
-    'My name is Micky',
-    'I am Web Developer',
-    'I am Programmer',
-    'I am Computer Engineer',
-    'I am Ux/Ui Designer',
-    'I am Innovator',
-  ];
-  const speed = 75; // Adjust the speed
 
     return <div className={classNames(styles.root, className)}>
         <div className={styles['box-title']}>
             <h2 className={styles.title}>Patit Maiprasert</h2>
             <h4 className={classNames(styles.subtitle)}>
-          <TypewriterAnimation words={words} speed={speed} />
+          <TypewriterAnimation />
           </h4>
             <span>text</span>
         </div>
