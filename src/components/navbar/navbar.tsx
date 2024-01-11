@@ -12,6 +12,7 @@ export interface NavbarProps {
  */
 export const Navbar = ({ className }: NavbarProps) => {
     return <div className={classNames(styles.root, className)}>
+        navbar
         {/* <Link to={'/'}>
             <h1>logo</h1>
         </Link>
