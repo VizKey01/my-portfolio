@@ -8,7 +8,7 @@ import styles from './App.module.scss';
 import { Mainpage } from './components/mainpage/mainpage';
 import { Portfolio } from './components/portfolio/portfolio';
 import { Footer } from './components/footer/footer';
-import { BrowserRouter as Router } from 'react-router-dom';
+// import { BrowserRouter as Router } from 'react-router-dom';
 
 
 function App() {
