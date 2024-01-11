@@ -1,7 +1,8 @@
 import classNames from 'classnames';
 import styles from './navbar.module.scss';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
+//npm run npm install react-router-dom
 export interface NavbarProps {
     className?: string;
 }
