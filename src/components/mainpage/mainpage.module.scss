@@ -1,132 +1,133 @@
 .root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 6rem 0rem 3rem;
-  text-align: center;
-  position: static;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  --main-wh: #f0f0f0;
-  --main-c1: #47a5fb;
-  --main-c2: #49a5ef;
-  --main-c3: #048aff;
-  --main-c4: #0068ff;
-  --main-c5: #3652dd;
-  --main-bl: #000000;
+  max-width: 1480px;
+    margin: 0 auto;
+    padding: 6rem 0rem 3rem;
+    text-align: center;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    --main-wh: #f0f0f0;
+    --main-c1: #47a5fb;
+    --main-c2: #49a5ef;
+    --main-c3: #048aff;
+    --main-c4: #0068ff;
+    --main-c5: #3652dd;
+    --main-bl: #000000;
 }
 
 .logo {
-  padding: 1.25em;
-  will-change: filter;
-  transition: filter 300ms;
+    padding: 1.25em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
 
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 .logo.ts:hover {
-  filter: drop-shadow(0 0 2em #3178c6aa);
+    filter: drop-shadow(0 0 2em #3178c6aa);
 }
 
 .logo.scss:hover {
-  filter: drop-shadow(0 0 2em #cc6698aa);
+    filter: drop-shadow(0 0 2em #cc6698aa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
 
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
-  padding: 2em;
+    padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+    color: #888;
 }
 
 .title {
-  font-size: 2.5rem;
-  margin: auto;
+    font-size: 2.5rem;
+    margin: auto;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin: 0rem;
-  padding-bottom: 0.1rem;
-  font-style: normal;
-  font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0rem;
+    padding-bottom: 0.1rem;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .button {
-  background-image: linear-gradient(127deg, #93edff 8%, #0aa1d6 71%, #2267e8 100%);
-  background-color: transparent;
-  background-repeat: repeat;
-  background-position: 50% 50%;
-  background-size: 100% 100%;
-  background-attachment: scroll;
-  background-origin: padding-box;
-  background-clip: border-box;
-  border: 2px solid transparent;
-  font-size: 0.9em;
-  padding: 0.8em 1.5em;
+    background-image: linear-gradient(127deg, #93edff 8%, #0aa1d6 71%, #2267e8 100%);
+    background-color: transparent;
+    background-repeat: repeat;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    border: 2px solid transparent;
+    font-size: 0.9em;
+    padding: 0.8em 1.5em;
 }
 
 @keyframes blink {
-  0%,
-  50%,
-  100% {
-    opacity: 1;
-  }
 
-  25%,
-  75% {
-    opacity: 0;
-  }
+    0%,
+    50%,
+    100% {
+        opacity: 1;
+    }
+
+    25%,
+    75% {
+        opacity: 0;
+    }
 }
 
 .typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: relative;
-
-  span {
+    overflow: hidden;
+    white-space: nowrap;
     display: inline-block;
-  }
+    position: relative;
 
-  .cursor {
-    margin-left: 0.1em;
-    display: inline-block;
-    width: 0.1em;
-    height: 1em;
-    background-color: var(--main-c5);
-    /* Cursor color */
-    animation: blink 1.2s infinite;
-  }
+    span {
+        display: inline-block;
+    }
+
+    .cursor {
+        margin-left: 0.1em;
+        display: inline-block;
+        width: 0.1em;
+        height: 1em;
+        background-color: var(--main-c5);
+        /* Cursor color */
+        animation: blink 1.2s infinite;
+    }
 }
 
 .description {
-  font-size: 0.8em;
-  margin: auto;
-  padding: 0em 7em 1em;
+    font-size: 0.9em;
+    margin: auto;
+    padding: 0em 7em 1em;
 }

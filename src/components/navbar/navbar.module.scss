@@ -1,2 +1,49 @@
 .root {
+    max-width: 1280px;
+    margin: 0 2em;
+    padding: 0rem 0rem 3rem;
+    text-align: center;
+    position: static;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    --main-wh: #ffffff;
+    --main-c1: #47a5fb;
+    --main-c2: #49a5ef;
+    --main-c3: #048aff;
+    --main-c4: #0068ff;
+    --main-c5: #3652dd;
+    --main-bl: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--main-wh); /* Adjust the background color as needed */
+    color: var(--main-c5); /* Adjust the text color as needed */
+
+    .logo {
+      /* Add styling for the logo container */
+      margin-right: 1rem; /* Add spacing between logo and links */
+    }
+
+    .links {
+      /* Add styling for the links container */
+      display: flex;
+
+      a {
+        /* Styling for individual links */
+        color: var(--main-c1); /* Adjust link text color */
+        text-decoration: none;
+        margin-right: 1rem; /* Add spacing between links */
+        font-weight: bold; /* Optionally make the text bold */
+        transition: color 0.3s ease; /* Smooth color transition on hover */
+
+        &:hover {
+          color: var(--main-c5); /* Change link color on hover */
+        }
+      }
+    }
 }
