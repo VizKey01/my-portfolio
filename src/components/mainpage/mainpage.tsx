@@ -7,12 +7,16 @@ import { ReactComponent as ReactLogo } from '../../assets/react.svg';
 import { ReactComponent as ViteLogo } from '../../assets/vite.svg';
 import { ReactComponent as TypescriptLogo } from '../../assets/typescript.svg';
 import { ReactComponent as ScssLogo } from '../../assets/scss.svg';
+import resumeFile from '../../assets/Picture/Patit_Maiprasert-Update.pdf';
+import GithubIcon from '../../assets/icons/github-icon.svg';
+import InstagramIcon from '../../assets/icons/instagram-icon.svg';
+import LinkedInIcon from '../../assets/icons/linkedin-icon.svg';
 
 export interface MainpageProps {
     className?: string;
 }
 
-const TypewriterAnimation = ({}) => {
+const TypewriterAnimation = ({ }) => {
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [currentText, setCurrentText] = useState('');
     const [isDeleting, setIsDeleting] = useState(false);
@@ -67,16 +71,26 @@ export const Mainpage = ({ className }: MainpageProps) => {
                 <h4 className={classNames(styles.subtitle)}>
                     <TypewriterAnimation />
                 </h4>
-                <p className={styles.description}>
-                    I’m Computer Engineering student.<br></br>
-                    💻👩‍💻💻 Presently studying NLP with an emphasis on application development.
-                    <br></br>
-                    🚀 Aim to be developer and create new innovations to help make the world better.
+                
+                <p className={classNames(styles.description, styles['contact-icons'])}>
+                  <a href="https://github.com/VizKey01/" target="_blank" rel="noopener noreferrer">
+                    <img src={GithubIcon} alt="GitHub" className={classNames(styles.contactIcon, styles.githubIcon)} />
+                  </a>
+                  <a href="https://www.instagram.com/viz_key/" target="_blank" rel="noopener noreferrer">
+                    <img src={InstagramIcon} alt="Instagram" className={classNames(styles.contactIcon, styles.instagramIcon)} />
+                  </a>
+                  <a href="https://www.linkedin.com/in/patit-maiprasert-266bb62a1/" target="_blank" rel="noopener noreferrer">
+                    <img src={LinkedInIcon} alt="LinkedIn" className={classNames(styles.contactIcon, styles.linkedinIcon)} />
+                  </a>
                 </p>
             </div>
 
-            <button className={styles.button}>👉🏻 My CV Here 👈🏻</button>
-            <div>
+            <button className={styles.button}>
+                <a href={resumeFile} target="_blank" rel="noopener noreferrer" className={styles.a}>
+                    👉🏻 My CV Here 👈🏻
+                </a>
+            </button>
+            {/* <div>
                 <a href="https://vitejs.dev" target="_blank">
                     <ViteLogo
                         height="6em"
@@ -109,7 +123,7 @@ export const Mainpage = ({ className }: MainpageProps) => {
                         title="SCSS logo"
                     />
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 };

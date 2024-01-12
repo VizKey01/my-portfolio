@@ -1,5 +1,5 @@
 .root {
-  max-width: 1480px;
+    max-width: 1480px;
     margin: 0 auto;
     padding: 6rem 0rem 3rem;
     text-align: center;
@@ -130,4 +130,29 @@
     font-size: 0.9em;
     margin: auto;
     padding: 0em 7em 1em;
+}
+
+.a {
+    color: #000000;
+}
+
+.contact-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Adjust the gap between icons as needed */
+
+    .contactIcon {
+        width: 30px;
+        /* Adjust the width as needed */
+        height: 30px;
+        /* Adjust the height as needed */
+
+        &:last-child {
+            margin-right: 0;
+            /* Remove margin for the last icon */
+        }
+    }
+
+    padding-top:1em;
 }
