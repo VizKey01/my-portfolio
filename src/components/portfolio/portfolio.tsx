@@ -56,6 +56,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                 </div>
             </div>
             <h5 className={styles['sub-year']}>Project -</h5>
+            <h5 className={styles['sub-year']}>Competitive Academic -</h5>
             <div className={styles['grid-items']}>
                 <div className={styles['gird-content']}>
                     <img src={posn101logo} alt="" className={styles['grid-img']} />
@@ -72,6 +73,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                     </div>
                 </div></div>
             <h4>2022</h4>
+            <h5 className={styles['sub-year']}>Project -</h5>
             <h4>2021</h4>
         </div>
     );

@@ -10,17 +10,15 @@ export interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     return <div className={classNames(styles.root, className)}>
         <div className={styles.navbar}>
-                <div className={styles.logo}>
-                    {/* Your logo goes here */}
-                    hello world
-                    {/* <ReactLogo height="50" width="50" /> */}
-                </div>
-                <div className={styles.links}>
-                    <a href="#home">Home</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#about">About Me</a>
-                    <a href="#contact">Contact</a>
-                </div>
+            <div className={styles.logo}>
+                {/* Your logo goes here */}My Website{/* <ReactLogo height="50" width="50" /> */}
             </div>
-        </div>;
+            <div className={styles.links}>
+                <a href="#home">Home</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#about">About Me</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>;
 };
