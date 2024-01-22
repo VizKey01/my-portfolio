@@ -37,9 +37,7 @@ h4 {
     align-content: center;
 }
 
-.gird-content {
-    
-}
+.gird-content {}
 
 .visit-site {
     display: flex;
@@ -54,6 +52,8 @@ h4 {
     min-width: auto;
     height: auto;
     width: 100%;
+    max-height: 400px;
+    max-width: 416px;
 }
 
 .description {
