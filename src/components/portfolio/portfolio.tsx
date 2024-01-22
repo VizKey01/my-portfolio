@@ -25,6 +25,7 @@ export const Portfolio = ({ className }: PortfolioProps) => {
             <h5 className={styles['sub-year']}>Project -</h5>
             <h4>2023</h4>
             <h5 className={styles['sub-year']}>Competitive Academic -</h5>
+            <h5 className={styles['sub-year']}>Project -</h5>
             <div className={styles['grid-items']}>
                 <div className={styles['gird-content']}>
                     <img src={posn101logo} alt="" className={styles['grid-img']} />
@@ -53,27 +54,10 @@ export const Portfolio = ({ className }: PortfolioProps) => {
                         <h4>Project name</h4>
                         <a>visit</a>
                     </div>
-                </div>
-            </div>
-            <h5 className={styles['sub-year']}>Project -</h5>
-            <h5 className={styles['sub-year']}>Competitive Academic -</h5>
-            <div className={styles['grid-items']}>
-                <div className={styles['gird-content']}>
-                    <img src={posn101logo} alt="" className={styles['grid-img']} />
-                    <div className={styles['visit-site']}>
-                        <h4>Project name</h4>
-                        <a>visit</a>
-                    </div>
-                </div>
-                <div className={styles['gird-content']}>
-                    <img src={posn101logo} alt="" className={styles['grid-img']} />
-                    <div className={styles['visit-site']}>
-                        <h4>Project name</h4>
-                        <a>visit</a>
-                    </div>
                 </div></div>
             <h4>2022</h4>
             <h5 className={styles['sub-year']}>Project -</h5>
+            <h5 className={styles['sub-year']}>Competitive Academic -</h5>
             <h4>2021</h4>
         </div>
     );
