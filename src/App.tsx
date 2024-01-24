@@ -8,7 +8,6 @@ import styles from './App.module.scss';
 import { Mainpage } from './components/mainpage/mainpage';
 import { Portfolio } from './components/portfolio/portfolio';
 import { Footer } from './components/footer/footer';
-import { Navbar } from './components/navbar/navbar';
 // import { BrowserRouter as Router } from 'react-router-dom';
 
 
@@ -18,7 +17,6 @@ function App() {
 
     return (
         <div className={styles.App}>
-            <Navbar />
             <Mainpage />
             <Portfolio />
             <Footer />

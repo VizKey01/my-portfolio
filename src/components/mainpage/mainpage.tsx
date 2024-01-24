@@ -71,8 +71,8 @@ export const Mainpage = ({ className }: MainpageProps) => {
                 <h4 className={classNames(styles.subtitle)}>
                     <TypewriterAnimation />
                 </h4>
-                
                 <p className={classNames(styles.description, styles['contact-icons'])}>
+                
                   <a href="https://github.com/VizKey01/" target="_blank" rel="noopener noreferrer">
                     <img src={GithubIcon} alt="GitHub" className={classNames(styles.contactIcon, styles.githubIcon)} />
                   </a>
